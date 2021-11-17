@@ -13,10 +13,10 @@ const routes: Routes = [
       { path: '', redirectTo: '/authentication/sign-in', pathMatch: 'full' },
 
     ]
-   },
-    //{path:'authentication/sign-up',canActivate : [AuthGuard], component: SignUpComponent},
-    //{path:'authentication/sign-in', component: SignInComponent},
-    //{path: 'authentication/forgot-password', component:ForgotPasswordComponent},
+  },
+  //{path:'authentication/sign-up',canActivate : [AuthGuard], component: SignUpComponent},
+  //{path:'authentication/sign-in', component: SignInComponent},
+  //{path: 'authentication/forgot-password', component:ForgotPasswordComponent},
   {
     path: 'authentication', component: AuthLayoutComponent,
     loadChildren: () =>
@@ -27,8 +27,8 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: MainLayoutComponent,
-      loadChildren: () =>
-        import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   { path: '**', component: Page404Component },
 ];
