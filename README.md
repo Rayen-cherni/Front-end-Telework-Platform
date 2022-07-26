@@ -1,27 +1,58 @@
-# TELEWORK_PLATFORM
+## Project Summary
+Proxym's Telwork platform offer a solution for managing teleworking, compliance with health standards, optimising workspace and planning the presence of employees in the office according to configurable priority rules. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## Features
+The functionality of the system will be divided by the type of access of each actor.
 
-## Development server
+**Admin's** main features are :
+- Authenticate: In order to access the application's features, the admin must authenticate himself by entering his email and password.
+- Create an account: To register users to our application, the admin must enter an email, and generate a password.
+- Modify an account: the admin can change the roles of the users. 
+- Create a pole: To create a cluster, the admin must enter the name of a pole. 
+- Modify a pole: For each cluster, the admin must assign a pole manager. 
+- Consult information: The administrator can consult the information of all users relating to our application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Pole manager's** main features are :
+- Authenticate: In order to access the application's features, the pole manager must authenticate himself by entering his email and password.
+- View schedules : the cluster manager can view all schedules of all developers. 
+- Approve schedules: the cluster manager can approve the schedule of each developer by entering the schedule decision.
+- Consult information : the manager can consult the information of all the users relating to our application. 
 
-## Code scaffolding
+**Project manager's** main features are :
+- Authenticate: In order to access the application's features the project manager must authenticate by entering their email and password.
+- Configure schedules: The project manager can configure all schedules for all developers by entering the start date, end date and scheduling decision.
+- Create Projects: The Project Manager can create all projects by entering the name of each project.
+- Assign Developers : the Project Manager can assign developers to each project.
+- View information : the project manager can view the information of all users relating to our application. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Developer's** main features are :
+- Authenticate: In order to access the application's features, developers must authenticate themselves by entering their email and password.
+- Consult information: the project manager can consult the information of all developers related to our application.
 
-## Build
+## Professional supervisor 
+[Proxym Group](https://www.proxym-group.com/) is a global IT player recognised as a digital service provider in the fields of Smart Gov, Finance and Retail as well as an integrator of digital solutions.
+With more than 600 successful digital projects and satisfied customers since its foundation in 2006 and more than 170 mobile software engineers in Europe, Africa and the Middle East, Proxym Group is at the heart of innovation.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Installation
+Want to Test? Great!
+Let's start by cloning the project in your machine
+Open your terminal and execute
+```sh
+git clone https://github.com/Rayen-cherni/Front-end-Telework-Platform.git
+```
+Great, then run the following command line to run the project locally 
+```sh
+npm install
+ng serve --open
+```
+You will be redirected automatically to http://localhost:4600. <br/>
+If you have any problem with the redirection please go to your Browser and tap
+```sh
+http://localhost:4600
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Throughout the entire application
+Developers can find more information about this Application on my Github repository. I have written a series of two repositories on Spring Boot and Angular, here are the links:
+- [Front-end developed using Angular 10](https://github.com/Rayen-cherni/Front-end-Telework-Platform)
+- [Back-end developed using Spring boot](https://github.com/Rayen-cherni/Back-end-Telework-Platform)
